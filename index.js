@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URL)
     })
 })
 
-app.use('/tasks', tasksRoutes);
+app.use('/api/tasks', tasksRoutes);
 
 app.get('/', (req, res) => {
     res.status(200).json({message: 'Welcome to your Task Management App'});
